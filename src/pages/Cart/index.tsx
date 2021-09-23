@@ -77,7 +77,7 @@ const Cart = (): JSX.Element => {
                   <button
                     type="button"
                     data-testid="decrement-product"
-                    disabled={product.amount < 1}
+                    disabled={product.amount <= 1}
                     onClick={() => handleProductDecrement(product)}
                   >
                     <MdRemoveCircleOutline size={20} />
